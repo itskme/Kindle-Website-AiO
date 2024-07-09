@@ -75,6 +75,8 @@
                 flex: 30%; 
                 background-color: rgb(233, 227, 217);
                 padding: 20px;
+                padding-bottom: 40px;
+                font-size: large;
         }
 
             .sidebottom {
