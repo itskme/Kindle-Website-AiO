@@ -4,13 +4,14 @@
 }
             body {
                 font-family: catamaran-light, Helvetica, sans-serif;
+                outline: 5px solid black
         }
 
             .header {
                 padding: 80px;
                 text-align: center;
                 letter-spacing: .70px;
-                background: rgb(216, 216, 216);
+                background: rgb(233, 227, 217);
                 color: rgb(0, 0, 0);
         }
 
@@ -53,6 +54,23 @@
                 flex-wrap: wrap;
         }
 
+            .roww { 
+                display: flex;
+                flex-wrap: wrap;
+        }
+
+            .sidetopw {
+                flex: 30%; 
+                background-color: black;
+                padding: 20px;
+            }
+
+            .sidebottomw {
+                flex: 100%; 
+                background-color: black;
+                padding: 20px; 
+        }
+
             .sidetop {
                 flex: 30%; 
                 background-color: rgb(233, 227, 217);
@@ -68,11 +86,13 @@
         }
 
             .main {
-                flex: 70%;
+                flex:100%;
                 background-color: rgb(173, 163, 163);
                 padding: 20px;
                 text-align: center;
-                text-decoration: overline;
+                text-decoration: none;
+                white-space: pre-wrap;
+                width: wrap
         }
 
             hr.dotted {
@@ -143,12 +163,13 @@
             .calendar__day-number {
             align-content: center;
             justify-content: center;
-            aspect-ratio: 1;
+            aspect-ratio: 1.5;
             color: #000;
             display: flex;
             line-height: 1.4;
             text-align: center;
             width: 2.4rem;
+            
         }
             .calendar__day-number--current {
             background-color: #ff9900;

@@ -34,6 +34,7 @@ function Time() {
     hour = update(hour);
     minute = update(minute);
     second = update(second);
+
    
     // Adding time elements to the div
     document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period;
@@ -70,5 +71,7 @@ function Time() {
     return t;
     }
    }
+
+
    
    Time();
