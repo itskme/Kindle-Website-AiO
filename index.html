@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Amazin' kMenu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+@font-face { font-family: catamaran-light; src: url('catamaran-light.ttf'); } 
+
+            body {
+                font-family: catamaran-light, Helvetica, sans-serif;
+            }
+
+            .header {
+                padding: 80px;
+                text-align: center;
+                letter-spacing: .70px;
+                background: rgb(128, 128, 128);
+                color: white;
+            }
+
+            .header h1 { 
+                font-size: 60px;
+            }
+
+            .navbar {
+                overflow: hidden;
+                background-color: black;
+            }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none
+            }
+
+            .navbar a.right { 
+                float: right;
+            }
+
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .row { 
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .sidetop {
+                flex: 30%; 
+                background-color: black;
+                padding: 20px;
+            }
+
+            .sidebottom {
+                flex: 100%; 
+                background-color: black;
+                padding: 20px;
+            }
+
+            .main {
+                flex: 70%;
+                background-color: rgb(173, 163, 163);
+                padding: 20px;
+                text-align: center;
+                text-decoration: overline;
+            }
+
+            hr.dotted {
+                border-top: 3px dashed #bbb
+            }
+
+            hr.solid {
+                border-top: 3px solid #bbb
+            }
+
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="header">
+            <h1>kindle AiO</h1>
+            <h3>Useful info from anywhere in the world.</h3>
+            
+        </div>
+
+        <div class="navbar">
+            <a href="#">weather</a>
+            <a href="#">books</a>
+            <a href="#" class="right">k.menu</a>
+        </div>
+
+        <div class="row">
+            <div class="sidetop">
+                <iframe title="Environment Canada Weather" width="300" height="200" src="https://weather.gc.ca/wxlink/wxlink.html?cityCode=on-95&amp;lang=e" allowtransparency="true" frameborder="0"></iframe>
+            </div>
+
+            <div class="sidebottom">
+                
+                <iframe title="Environment Canada Weather" width="300" height="200" src="https://weather.gc.ca/wxlink/wxlink.html?cityCode=on-174&amp;lang=e" allowtransparency="true" frameborder="0"></iframe>
+            </div>
+
+            <div class="main">herro</div>
+        </div>
+
+    </body>
+
+</html>
