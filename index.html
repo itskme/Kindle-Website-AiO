@@ -16,8 +16,8 @@
                 padding: 80px;
                 text-align: center;
                 letter-spacing: .70px;
-                background: rgb(128, 128, 128);
-                color: white;
+                background: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
             }
 
             .header h1 { 
@@ -84,34 +84,108 @@
                 border-top: 3px solid #bbb
             }
 
+            #digital-clock {
+                text-align: center;
+                height:100%;
+                width:100%;
+                display: flex;
+                justify-content: center;
+                font-size: 75px;
+            }
             
+            html {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box;
+            }
+            .calendar {
+            background-color: #FFF;
+            border-radius: 0.8rem;
+            box-shadow: 0 0.8rem 1.6rem rgba(35, 131, 157, 0.2);
+            padding: 3.2rem;
+            }
+            .calendar__header {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 0.2rem;
+            padding: 0 0.4rem 1.2rem;
+            text-transform: uppercase;
+            }
+            .calendar__day-names {
+            border-bottom: 0.1rem solid #828889;
+            display: flex;
+            gap: 1.2rem;
+            margin-bottom: 0.8rem;
+            padding: 0.8rem 0;
+            }
+            .calendar__day-name {
+            aspect-ratio: 1;
+            color: #828889;
+            font-weight: normal;
+            text-align: center;
+            width: 2.4rem;
+            }
+            .calendar__day_numbers {
+            display: flex;
+            flex-direction: column;
+            }
+            .calendar__day-numbers-row {
+            display: flex;
+            gap: 1.2rem;
+            padding: 0.6rem 0;
+            }
+            .calendar__day-numbers-row:first-child {
+            justify-content: flex-end;
+            }
+            .calendar__day-number {
+            align-content: center;
+            justify-content: center;
+            aspect-ratio: 1;
+            color: #000;
+            display: flex;
+            line-height: 1.4;
+            text-align: center;
+            width: 2.4rem;
+            }
+            .calendar__day-number--current {
+            background-color: #23839D;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0.4rem #23839D;
+            color: #FFF;
+            }
         </style>
     </head>
     
     <body>
         <div class="header">
             <h1>kindle AiO</h1>
-            <h3>Useful info from anywhere in the world.</h3>
+            <h3>Made by @itskme on GitHub</h3>
             
         </div>
 
         <div class="navbar">
-            <a href="#">weather</a>
-            <a href="#">books</a>
-            <a href="#" class="right">k.menu</a>
+            <a href="weather.html">weather</a>
+            <a href="#">rss</a>
+            <a href="index.html" class="right">k.menu</a>
         </div>
 
         <div class="row">
+
+            <div id = "digital-clock"> </div>
+            <script src = "script.js"> </script>
+            
+
             <div class="sidetop">
-                <iframe title="Environment Canada Weather" width="300" height="200" src="https://weather.gc.ca/wxlink/wxlink.html?cityCode=on-95&amp;lang=e" allowtransparency="true" frameborder="0"></iframe>
+                
             </div>
 
             <div class="sidebottom">
                 
-                <iframe title="Environment Canada Weather" width="300" height="200" src="https://weather.gc.ca/wxlink/wxlink.html?cityCode=on-174&amp;lang=e" allowtransparency="true" frameborder="0"></iframe>
+                
             </div>
 
-            <div class="main">herro</div>
+            <div class="main">@itskme on GitHub, 2024.</div>
         </div>
 
     </body>
